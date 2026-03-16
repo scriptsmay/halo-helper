@@ -1,0 +1,8 @@
+halo:
+  base_url: 'http://localhost:8080'
+  token: '你的_PERSONAL_ACCESS_TOKEN'
+  video_group_id: 'attachment-group-xxxxxx'
+
+server:
+  cache_ttl: 600
+  port: 8003

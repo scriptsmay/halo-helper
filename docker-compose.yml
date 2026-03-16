@@ -1,0 +1,13 @@
+services:
+  halo-api-helper:
+    image: python:3.10-slim
+    container_name: halo-api-helper
+    working_dir: /app
+    volumes:
+      - ./app:/app # 挂载后，容器内可以读到 config.yaml
+    ports:
+      - '8003:8003' # NAS 外部依然访问 8080
+    command: >
+      sh -c "pip install --no-cache-dir -r requirements.txt &&
+             python main.py"
+    restart: always

@@ -15,3 +15,10 @@ step 3.
 ```
 docker compose up -d
 ```
+
+open the target url:
+
+```
+# random halo video
+http://localhost:8003/api/v1/random-video
+```
